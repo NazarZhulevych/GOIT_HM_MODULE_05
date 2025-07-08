@@ -51,8 +51,8 @@ def display_log_counts(counts: dict):
 if __name__ == "__main__":
     if len(sys.argv) < 2 or len(sys.argv) > 3:
         print("Використання:")
-        print("  python test.py logfile.log             # Для статистики")
-        print("  python test.py logfile.log ERROR       # Для фільтрації за рівнем")
+        print("  python main.py logfile.log             # Для статистики")
+        print("  python main.py logfile.log ERROR       # Для фільтрації за рівнем")
         sys.exit(1)
 
     log_file_path = sys.argv[1]
