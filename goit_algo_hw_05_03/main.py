@@ -69,6 +69,7 @@ if __name__ == "__main__":
         # logfile path + log level
         level = sys.argv[2].upper()
         filtered_logs = filter_logs_by_level(logs, level)
+        display_log_counts(logs)
         if filtered_logs:
             print(f"\nДеталі логів для рівня '{level}':")
             print("-------------------------------")
